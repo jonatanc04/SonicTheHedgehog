@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic the Hedgehog</title>
+    <link rel="icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="container">
+        <img id="background" class="back" src="resources/img/backdia.png">
+
+        <img class="corre sonic d-none d-xl-block" src="resources/img/sonic.gif">
+        <img class="corre knuckles d-none d-xl-block" src="resources/img/knukles.gif">
+        <img class="corre amy d-none d-xl-block" src="resources/img/amy.gif">
+        <div id="vuelo">
+            <img class="corre tails d-none d-xl-block" src="resources/img/tails.gif">
+        </div>
+        <div id="vuelo">
+            <img class="corre cream d-none d-xl-block" src="resources/img/cream.gif">
+        </div>
+
+        <div id="ventana">
+            <img src="resources/img/intro.gif">
+            <p id="start-game" tabindex="0" class="press">CLICK AQUÍ</p>
+        </div>
+        
+        <div id="segunda-pantalla" class="oculto">
+            <div id="alerta"></div>
+            <p id="text-alert">¡EGGMAN HA ESCAPADO, DERRÓTALO!</p>
+            <img id="sign-alert" src="resources/img/alert.png">
+
+            <div id="eggman">
+                <img class="body" src="resources/img/eggman.png">
+                <img class="fire" src="resources/img/fire.gif">
+            </div>
+        </div>
+
+        <div id="tercera-pantalla" class="oculto">
+            <div class="ventana-game">
+                <div class="barra">
+                    <img src="resources/img/ring.gif">
+                </div>
+                <div class="content">
+                    <video autoplay controls muted>
+                        <source src="resources/video/video.mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="ventana-game mover">
+                <div class="barra">
+                    <img src="resources/img/ring.gif"> 
+                </div>
+                <div class="content2">
+                    <img src="resources/img/sonic.gif">
+                    <img src="resources/img/sonic.gif">
+                    <img src="resources/img/sonic.gif">
+                    <img src="resources/img/sonic.gif">
+                    <img src="resources/img/sonic.gif">
+                </div>
+            </div>
+        </div>
+        
+        <img class="modo oculto" id="claro" src="resources/img/dia.png">
+        <img class="modo" id="oscuro" src="resources/img/noche.png">
+
+    </div>
+
+    <audio autoplay>
+        <source id="music" src="resources/sounds/general.mp3" type="audio/mp3">
+    </audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
